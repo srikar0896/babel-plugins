@@ -2,8 +2,6 @@ const babel = require('babel-core');
 const run_config = require('./run-config').default;
 const fs = require('fs');
 
-console.log(run_config);
-
 const plugin = require(`./plugins/${run_config.plugin_file_name}`);
 const fileLocation = `./code/${run_config.to_be_transformed_file_name}.js`;
 

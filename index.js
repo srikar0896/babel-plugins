@@ -24,5 +24,3 @@ fs.writeFileSync(`./output/transformed-${output_file_name}.js`, code);
 if (!!ast) {
   fs.writeFileSync(`./output/ast-${output_file_name}.js`, JSON.stringify(ast));
 }
-console.log(ast);
-// console.log(code);

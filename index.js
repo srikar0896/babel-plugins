@@ -2,14 +2,16 @@ const babel = require('babel-core');
 const run_config = require('./run-config').default;
 const fs = require('fs');
 
-const plugin = require(`./plugins/${run_config.plugin_file_name}`);
-
 const fileLocation = `./code/${run_config.to_be_transformed_file_name}.js`;
 
 const output_file_name = run_config.output_file_name ? run_config.output_file_name : run_config.to_be_transformed_file_name;
 
+console.log(run_config.plugin_file_names);
 const { code, ast } = babel.transformFileSync(fileLocation, {
-  plugins: [plugin],
+  plugins: run_config.plugin_file_names.reduce((acc, plugin_file_name) => [
+    ...acc,
+    require(`./plugins/${plugin_file_name}`)
+  ], []),
   ast: run_config.generate_ast ? run_config.generate_ast : false,
   "presets": [
     [

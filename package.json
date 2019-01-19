@@ -1,0 +1,30 @@
+{
+  "name": "babel-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srikar0896/babel-plugins.git"
+  },
+  "keywords": [
+    "babel",
+    "react"
+  ],
+  "author": "srikar0896",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srikar0896/babel-plugins/issues"
+  },
+  "homepage": "https://github.com/srikar0896/babel-plugins#readme",
+  "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.0-beta.6"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0"
+  }
+}

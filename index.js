@@ -6,7 +6,6 @@ const fileLocation = `./code/${run_config.to_be_transformed_file_name}.js`;
 
 const output_file_name = run_config.output_file_name ? run_config.output_file_name : run_config.to_be_transformed_file_name;
 
-console.log(run_config.plugin_file_names);
 const { code, ast } = babel.transformFileSync(fileLocation, {
   plugins: run_config.plugin_file_names.reduce((acc, plugin_file_name) => [
     ...acc,

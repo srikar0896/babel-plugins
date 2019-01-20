@@ -1,5 +1,5 @@
-const getClassMethodExpression = (t, classMethodsName) => {
-  return t.memberExpression(t.thisExpression(), t.identifier(classMethodsName));
+const getClassMethodExpression = (t, classMethodName) => {
+  return t.memberExpression(t.thisExpression(), t.identifier(classMethodName));
 };
 
 const ClassMethodParentPathVisitor = (t, classMethodName) => ({

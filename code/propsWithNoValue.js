@@ -1,10 +1,11 @@
+
 import React from 'react';
+import Message from 'components/Message';
 
 const hello = () => {
-  const err = 14
   return (
-    <div css={true} css>
+    <Message show>
       Hello world
-    </div>
+    </Message>
     );
 }

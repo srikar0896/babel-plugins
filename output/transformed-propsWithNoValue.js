@@ -1,9 +1,8 @@
 import React from 'react';
+import Message from 'components/Message';
 
 const hello = () => {
-  const err = 14;
-  return React.createElement("div", {
-    css: true,
-    css: false
+  return React.createElement(Message, {
+    show: false
   }, "Hello world");
 };

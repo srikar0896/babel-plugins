@@ -1,6 +1,6 @@
 # babel-plugins
 
-Silly Babel plugins.
+Simple Babel plugins.
 
 ## Plugin - propsDefaultValueToFalse
 
